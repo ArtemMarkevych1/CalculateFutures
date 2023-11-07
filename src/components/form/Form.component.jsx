@@ -83,7 +83,9 @@ function CalculateForm({theme}) {
 
             <Space direction="vertical" size={16} className="money-label">
                 <Typography.Text style={getThemeStyles(theme)}>
-                    {moneyInDeal ? `Your money in this deal is ${moneyInDeal.toFixed(2)} USDT` : "Please, calculate value"}
+                    {moneyInDeal
+                        ? `Your money in this deal is ${moneyInDeal.toFixed(2)} USDT, risk to loose is ${((formValues.deposit * formValues.stopLossInPercents) / 100).toFixed(2)} USDT`
+                        : "Please, calculate value"}
                 </Typography.Text>
             </Space>
 
