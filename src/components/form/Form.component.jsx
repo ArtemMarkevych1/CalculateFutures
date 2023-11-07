@@ -4,9 +4,9 @@ import {FormItem} from "react-hook-form-antd";
 import {zodResolver} from "@hookform/resolvers/zod";
 import {useForm} from 'react-hook-form';
 import * as z from "zod";
-import {getThemeStyles} from "../utils/getStyles.js";
+import {getThemeStyles} from "../../utils/getStyles.js";
 
-import "../components/Form.css"
+import "./Form.styles.css"
 
 const schema = z.object({
     deposit: z.coerce.number().positive(),

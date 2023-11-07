@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Layout, Menu, Switch} from 'antd';
 import {BulbOutlined, CodeSandboxOutlined} from '@ant-design/icons';
-import CalculateForm from './components/Form';
+import CalculateForm from './components/form/Form.component.jsx';
 import {getThemeStyles} from "./utils/getStyles.js";
 
 const {Header, Content} = Layout;
